@@ -4,4 +4,4 @@ RUN useradd -m openclaw
 WORKDIR /home/openclaw
 USER openclaw
 EXPOSE 10000
-CMD ["sh", "-c", "openclaw gateway --port ${PORT} --bind 0.0.0.0 --allow-unconfigured --mode local"]
+CMD ["sh", "-c", "openclaw gateway --port ${PORT} --bind 0.0.0.0 --allow-unconfigured"]
