@@ -1,4 +1,4 @@
-FROM node:22-slim
+FROM node:24-slim
 RUN npm install -g openclaw@latest
 RUN useradd -m openclaw
 WORKDIR /home/openclaw
