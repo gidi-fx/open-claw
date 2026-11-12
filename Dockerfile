@@ -6,4 +6,4 @@ ENV OPENCLAW_STATE_DIR=/home/node/.openclaw
 ENV OPENCLAW_WORKSPACE_DIR=/home/node/.openclaw/workspace
 ENV OPENCLAW_GATEWAY_PORT=10000
 EXPOSE 10000
-CMD ["sh", "-c", "openclaw gateway --port ${PORT} --bind lan --allow-unconfigured"]
+CMD ["sh", "-c", "openclaw gateway --port ${PORT} --bind custom:0.0.0.0 --allow-unconfigured"]
